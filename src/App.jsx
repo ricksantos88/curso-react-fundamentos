@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './components/layout/Card'
 
+import UserInfo from './components/conditional/UserInfo'
 import EvenOrOdd from './components/conditional/EvenOrOdd'
 import ProductsTable from './components/loops/ProductsTable'
 import Students from './components/loops/Students'
@@ -18,8 +19,11 @@ const App = () => {
             <h1>React Fundamentals</h1>
 
             <div className="Cards">
-            <Card title="#07 - Even or Odd - conditional render" color="#982395">
+                <Card title="#07 - Even or Odd - conditional render" color="#982395">
                     <EvenOrOdd number={15}/>
+                    <UserInfo user={{ name: "Wendel" }}/>
+                    <UserInfo user={{ email: "ws@email.com" }}/>
+                    <UserInfo />
                 </Card>
                 <Card title="#06 - Loop in products - Challenger" color="#3a9ad9">
                     <ProductsTable />
