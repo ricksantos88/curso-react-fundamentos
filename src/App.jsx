@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './components/layout/Card'
 
+import IndirectFather from './components/communication/IndirectFather'
 import DirectFather from './components/communication/DirectFather'
 import UserInfo from './components/conditional/UserInfo'
 import EvenOrOdd from './components/conditional/EvenOrOdd'
@@ -21,24 +22,33 @@ const App = () => {
 
             <div className="Cards">
 
+                <Card title="#09 - Indirect communication" color="#8bad39">
+                    <IndirectFather />
+                </Card>
+
                 <Card title="#08 - Direct communication" color="#186753">
                     <DirectFather />
                 </Card>
+
                 <Card title="#07 - Even or Odd - conditional render" color="#982395">
                     <EvenOrOdd number={15}/>
                     <UserInfo user={{ name: "Wendel" }}/>
                     <UserInfo user={{ email: "ws@email.com" }}/>
                     <UserInfo />
                 </Card>
+
                 <Card title="#06 - Loop in products - Challenger" color="#3a9ad9">
                     <ProductsTable />
                 </Card>
+
                 <Card title="#05 - Loop - Student list" color="#ff4c65">
                     <Students />
                 </Card>
+
                 <Card title="#04 - Component with child" color="#00c8f8">
                     <Parent name="Paula" surname="Santos"/>
                 </Card>
+
                 <Card title="#03 - Aleatory Number Challenger" color="#fa6904">
                     <Aleatory min={10} max={99}/>
                 </Card>
