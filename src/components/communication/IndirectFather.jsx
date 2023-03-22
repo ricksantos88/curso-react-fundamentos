@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import IndirectSon from './IndirectSon'
 
 const IndirectFather = props => {
 
-    let name = '?'
-    let age = 0
-    let nerd = false
+    const [name, setName] = useState('?')
+    const [age, setAge] = useState(0)
+    const [nerd, setNerd] = useState(false)
 
     const sendInformation = (nameP, ageP, nerdP) => {
         console.log(nameP, ageP, nerdP);
-
+        setName(nameP)
+        setAge(ageP)
+        setNerd(nerdP)
     }
 
     return (
