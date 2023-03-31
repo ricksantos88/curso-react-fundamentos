@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './components/layout/Card'
 
+import LotteryNumber from './components/lottery-number/LotteryNumber'
 import Counter from './components/count/Counter'
 import Input from './components/forms/Input'
 import IndirectFather from './components/communication/IndirectFather'
@@ -23,6 +24,10 @@ const App = () => {
             <h1>React Fundamentals</h1>
 
             <div className="Cards">
+
+            <Card title="#12 - Lottery Number - class component" color="#871625">
+                    <LotteryNumber />
+                </Card>
 
                 <Card title="#11 - Counter - class component" color="#424242">
                     <Counter initialNumber={10}/>
